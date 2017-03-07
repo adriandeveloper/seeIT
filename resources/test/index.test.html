@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+  <div id="mocha"></div>
+
+  <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+  <script src="../../node_modules/chai/chai.js" charset="utf-8"></script>
+  <script src="../../node_modules/mocha/mocha.js" charset="utf-8"></script>
+  <script type="text/javascript" src="../js/app.js"></script>
+
+  <script>mocha.setup('bdd');</script>
+  <script src="app.test.js"></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+
+  <div id="console-log"></div>
+
+
+  <h1>Recieve api requests from Fandango test</h1>
+  <label for="usr_input">Search for title here:</label>
+  <input type="text" name="usr_input" value="">
+  <input type="submit" name="usr_submit" value="Submit">
+
+
+</body>
+</html>

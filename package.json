@@ -1,0 +1,24 @@
+{
+  "name": "seeit",
+  "version": "0.0.1",
+  "description": "An app to make sure you're always on time for the film you want to see.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha $(find ./resources/test/ -name '*test.js') -R nyan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriandeveloper/seeIT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriandeveloper/seeIT/issues"
+  },
+  "homepage": "https://github.com/adriandeveloper/seeIT#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mocha": "^3.2.0"
+  }
+}
